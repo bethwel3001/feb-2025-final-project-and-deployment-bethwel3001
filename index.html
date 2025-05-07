@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaShop</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- JAVASCRIPT -->
+  <script defer src="js/script.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/partners.js"></script>
+  <!-- FONTS & ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar glassy-nav">
+        <a href="#" class="logo"><span>Nova</span><em>Shop</em></a>
+      
+        <nav class="nav-links" id="navMenu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#brands">Brands</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+      
+        <div class="nav-icons">
+          <button class="dark-mode-btn" onclick="toggleDarkMode()">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars" id="hamburgerIcon"></i>
+          </button>
+        </div>
+      </header>
+      
+      <div class="nav-overlay" id="navOverlay"></div>
+      
+      
+      <!-- Optional overlay to blur the page -->
+      <div class="nav-overlay" id="navOverlay"></div>      
+      
+<!-- HOME/HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text animate-on-load">
+      <h1><i class="fas fa-fire"></i> Upgrade Your Style</h1>
+      <p><i class="fas fa-tags"></i> Trendy. Affordable. Fast delivery.</p>
+      <a href="#products" class="cta-btn pulse">✨ Shop the Collection</a>
+    </div>
+    <div class="hero-image animate-on-scroll">
+      <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80" alt="Fashion Store" />
+    </div>
+  </section>
+<!-- ABOUT -->
+<!--Card Style -->
+<section id="about-cards" class="about-section">
+    <h2 class="section-title">Why <span class="highlight">NovaShop</span>?</h2>
+    <div class="about-cards">
+      <div class="card animate-border">
+        <i class="fas fa-bolt fa-2x"></i>
+        <h3><span class="key-text">Fast</span> Delivery</h3>
+        <p>Your orders reach your door in lightning speed, always on time.</p>
+      </div>
+      <div class="card animate-border">
+        <i class="fas fa-lock fa-2x"></i>
+        <h3><span class="key-text">Secure</span> Payments</h3>
+        <p>We use top-grade encryption for your complete peace of mind.</p>
+      </div>
+      <div class="card animate-border">
+        <i class="fas fa-smile-beam fa-2x"></i>
+        <h3><span class="key-text">Customer</span> Support</h3>
+        <p>Friendly humans to assist you 24/7—no bots, no fuss.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT Section - Text & Border Style -->
+  <section id="about" class="about-section bordered animate-on-scroll">
+    <div class="about-content">
+      <h2 class="section-heading">
+        <i class="fas fa-users"></i> Who <span class="highlight">We Are</span>
+      </h2>
+      <p>
+        <span class="emphasis">NovaShop</span> is a curated marketplace of handpicked
+        fashion and lifestyle brands focused on <span class="key-text">quality</span> and
+        <span class="key-text">customer satisfaction</span>.
+      </p>
+    </div>
+  </section>
+ <!-- PRODUCTS Section -->
+<section id="products" class="section products">
+    <h2>Best Sellers</h2>
+    <div class="product-grid">
+      <div class="product-card animate-on-load">
+        <img src="https://source.unsplash.com/300x300/?jacket" alt="Classic Jacket">
+        <h3>Classic Jacket</h3>
+        <p>$59.99</p>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="product-card animate-on-load">
+        <img src="https://source.unsplash.com/300x300/?sneakers" alt="Street Sneakers">
+        <h3>Street Sneakers</h3>
+        <p>$74.99</p>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="product-card animate-on-load">
+        <img src="https://source.unsplash.com/300x300/?bag" alt="Leather Bag">
+        <h3>Leather Bag</h3>
+        <p>$99.99</p>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <!-- More PRODUCTS -->
+      <div class="product-card animate-on-load">
+        <img src="https://source.unsplash.com/300x300/?watch" alt="Luxury Watch">
+        <h3>Luxury Watch</h3>
+        <p>$199.99</p>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="product-card animate-on-load">
+        <img src="https://source.unsplash.com/300x300/?hat" alt="Summer Hat">
+        <h3>Summer Hat</h3>
+        <p>$29.99</p>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+      <div class="product-card animate-on-load">
+        <img src="https://source.unsplash.com/300x300/?shoes" alt="Running Shoes">
+        <h3>Running Shoes</h3>
+        <p>$89.99</p>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+    </div>
+    <!-- Pagination and Call to Action -->
+    <div class="pagination">
+      <button class="prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="cta-section">
+      <p>Ready to shop? <span class="highlight">Start adding to your cart now!</span></p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+  </section>
+<!-- PARTNERS & Testimonies - Extra section -->
+  <section id="collaboration" class="section collaboration-section">
+    <div class="brands-container animate-on-scroll">
+      <h2 class="section-title">Our <span class="highlight">Partners</span></h2>
+      <div class="brand-logos">
+        <i class="fab fa-nike" title="Nike"></i>
+        <i class="fab fa-adidas" title="Adidas"></i>
+        <i class="fab fa-apple" title="Apple"></i>
+        <i class="fab fa-shopify" title="Shopify"></i>
+        <i class="fab fa-amazon" title="Amazon"></i>
+        <i class="fab fa-ebay" title="eBay"></i>
+      </div>
+    </div>
+    <div class="reviews-container animate-on-scroll">
+      <h2 class="section-title">What Our <span class="highlight">Customers Say</span></h2>
+      <div class="review-cards">
+        <div class="review-card">
+          <p>"I love the style and quality. Delivery was quick too!"</p>
+          <footer>- Jenna R.</footer>
+        </div>
+        <div class="review-card">
+          <p>"Super clean interface and easy to navigate. Shopping made fun!"</p>
+          <footer>- Liam T.</footer>
+        </div>
+        <div class="review-card">
+          <p>"NovaShop never disappoints. Great brands, fast shipping!"</p>
+          <footer>- Chloe M.</footer>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- FOOTER and Links -->
+<footer class="site-footer">
+    <div class="footer-top animate-on-scroll">
+      <div class="footer-brand">
+        <h3 class="footer-logo">NovaShop</h3>
+        <p>Your style, our passion.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Email: support@novashop.com</p>
+        <p>Phone: +1 234 567 890</p>
+      </div>
+  
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fas fa-globe"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="copyright">
+        &copy; 2025 NovaShop. All rights reserved. <a href="#top">Back to top ↑</a>
+      </p>
+    </div>
+  </footer>
+  <!-- JavaScript Scroll Reveal -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const animEls = document.querySelectorAll(".animate-on-scroll");
+
+  const reveal = () => {
+    animEls.forEach((el) => {
+      if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+        el.classList.add("visible");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", reveal);
+  reveal();
+});
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+const overlay = document.getElementById("navOverlay");
+const hamburgerIcon = document.getElementById("hamburgerIcon");
+
+hamburger.addEventListener("click", () => {
+  const isOpen = navMenu.classList.toggle("show");
+  overlay.classList.toggle("show");
+
+  // Toggle icon between bars and X
+  hamburgerIcon.classList.toggle("fa-bars");
+  hamburgerIcon.classList.toggle("fa-times");
+});
+
+overlay.addEventListener("click", () => {
+  navMenu.classList.remove("show");
+  overlay.classList.remove("show");
+  hamburgerIcon.classList.add("fa-bars");
+  hamburgerIcon.classList.remove("fa-times");
+});
+
+
+</script>  
+</body>
+</html>
