@@ -18,15 +18,12 @@
 <body>
     <header class="navbar glassy-nav">
         <a href="#" class="logo"><span>Nova</span><em>Shop</em></a>
-      
         <nav class="nav-links" id="navMenu">
-          <a href="#home">Home</a>
+          <a href="#">Home</a>
           <a href="#about">About</a>
           <a href="#products">Products</a>
-          <a href="#brands">Brands</a>
-          <a href="#reviews">Reviews</a>
+          <a href="#collaboration">Brands</a>
         </nav>
-      
         <div class="nav-icons">
           <button class="dark-mode-btn" onclick="toggleDarkMode()">
             <i class="fas fa-moon"></i>
@@ -35,18 +32,12 @@
             <i class="fas fa-bars" id="hamburgerIcon"></i>
           </button>
         </div>
-      </header>
-      
-      <div class="nav-overlay" id="navOverlay"></div>
-      
-      
-      <!-- Optional overlay to blur the page -->
+    </header>   
       <div class="nav-overlay" id="navOverlay"></div>      
-      
 <!-- HOME/HERO -->
   <section id="home" class="hero">
     <div class="hero-text animate-on-load">
-      <h1><i class="fas fa-fire"></i> Upgrade Your Style</h1>
+      <h1><i class="fas fa-fire"></i> Upgrade Your Style with <span class="highlight">Nova</span></h1>
       <p><i class="fas fa-tags"></i> Trendy. Affordable. Fast delivery.</p>
       <a href="#products" class="cta-btn pulse">✨ Shop the Collection</a>
     </div>
@@ -93,44 +84,69 @@
 <section id="products" class="section products">
     <h2>Best Sellers</h2>
     <div class="product-grid">
-      <div class="product-card animate-on-load">
-        <img src="https://source.unsplash.com/300x300/?jacket" alt="Classic Jacket">
-        <h3>Classic Jacket</h3>
-        <p>$59.99</p>
-        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-      </div>
-      <div class="product-card animate-on-load">
-        <img src="https://source.unsplash.com/300x300/?sneakers" alt="Street Sneakers">
-        <h3>Street Sneakers</h3>
-        <p>$74.99</p>
-        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-      </div>
-      <div class="product-card animate-on-load">
-        <img src="https://source.unsplash.com/300x300/?bag" alt="Leather Bag">
-        <h3>Leather Bag</h3>
-        <p>$99.99</p>
-        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-      </div>
-      <!-- More PRODUCTS -->
-      <div class="product-card animate-on-load">
-        <img src="https://source.unsplash.com/300x300/?watch" alt="Luxury Watch">
-        <h3>Luxury Watch</h3>
-        <p>$199.99</p>
-        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-      </div>
-      <div class="product-card animate-on-load">
-        <img src="https://source.unsplash.com/300x300/?hat" alt="Summer Hat">
-        <h3>Summer Hat</h3>
-        <p>$29.99</p>
-        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-      </div>
-      <div class="product-card animate-on-load">
-        <img src="https://source.unsplash.com/300x300/?shoes" alt="Running Shoes">
-        <h3>Running Shoes</h3>
-        <p>$89.99</p>
-        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-      </div>
+        <div class="product-card animate-on-load">
+            <img src="https://images.unsplash.com/photo-1579980939549-733d6bef18a1?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Classic Jacket">
+            <h3>Classic Jacket</h3>
+            <p>$59.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card animate-on-load">
+            <img src="https://media.istockphoto.com/id/519872414/photo/canvas-shoes-on-asphalt.jpg?s=612x612&w=is&k=20&c=IGbgFgxZiJ3Wq9SyBaUfwQxETY0N3Znl9o2TzN_cM6Q=" alt="Street Sneakers">
+            <h3>Street Sneakers</h3>
+            <p>$74.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card animate-on-load">
+            <img src="https://media.istockphoto.com/id/519309544/photo/colorful-leather-handbags-for-sale.webp?a=1&b=1&s=612x612&w=0&k=20&c=z8FXKFxBXwmTPx7-ZnqnUcRJ31I-vRx86rKciA_lzQg=" alt="Leather Bag">
+            <h3>Leather Bag</h3>
+            <p>$99.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card animate-on-load">
+            <img src="https://images.unsplash.com/photo-1615245579875-dfaf91a51ec3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGF4dXJ5JTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D" alt="Luxury Watch">
+            <h3>Luxury Watch</h3>
+            <p>$199.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card animate-on-load">
+            <img src="https://images.unsplash.com/photo-1561625386-8688df36dd3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1bW1lciUyMGhhdHxlbnwwfHwwfHx8MA%3D%3D" alt="Summer Hat">
+            <h3>Summer Hat</h3>
+            <p>$29.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card animate-on-load">
+            <img src="https://media.istockphoto.com/id/1688015574/photo/white-sneaker-isolated-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=6JRmdS5V14lvIBrVvfu8Q6qHgZ8-gYRr4X45xXrByp8=" alt="Running Shoes">
+            <h3>Running Shoes</h3>
+            <p>$89.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card animate-on-load">
+            <img src="https://images.unsplash.com/photo-1737043818854-9432eacd746a?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdvb2xlbiUyMHNjYXJmfGVufDB8fDB8fHww" alt="Running Shoes">
+            <h3>Woolen Scarf</h3>
+            <p>$49.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card animate-on-load">
+            <img src="https://media.istockphoto.com/id/1852670700/photo/set-of-leather-elements-isolated-on-white-background-collection-of-belt-of-black-and-brown.webp?a=1&b=1&s=612x612&w=0&k=20&c=j8CMNwJAUZFTkPx3y1fgwgEgd3LtuXdolNgak-kKvnU=" alt="Running Shoes">
+            <h3>skin Belt</h3>
+            <p>$199.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <!-- Additional Dummy Products -->
+        <div class="product-card animate-on-load">
+            <img src="https://images.unsplash.com/photo-1618591552964-837a5a315fb2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FzdWFsJTIwc2hpcnR8ZW58MHx8MHx8fDA%3D" alt="Casual Shirt">
+            <h3>Casual Shirt</h3>
+            <p>$49.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card animate-on-load">
+            <img src="https://media.istockphoto.com/id/2143789264/photo/a-pile-of-blue-denim-jeans.webp?a=1&b=1&s=612x612&w=0&k=20&c=hygoWAA3Y9z0sgDRVOI5zGHCYEJ-1NjhpwUVUBg1Rvc=" alt="Denim Jeans">
+            <h3>Denim Jeans</h3>
+            <p>$59.99</p>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
     </div>
+    
     <!-- Pagination and Call to Action -->
     <div class="pagination">
       <button class="prev"><i class="fas fa-chevron-left"></i></button>
@@ -155,22 +171,39 @@
       </div>
     </div>
     <div class="reviews-container animate-on-scroll">
-      <h2 class="section-title">What Our <span class="highlight">Customers Say</span></h2>
-      <div class="review-cards">
-        <div class="review-card">
-          <p>"I love the style and quality. Delivery was quick too!"</p>
-          <footer>- Jenna R.</footer>
+        <h2 class="section-title">What Our <span class="highlight">Customers Say</span></h2>
+      
+        <div class="testimonial-slider">
+          <button class="slider-btn prev" onclick="prevReview()"><i class="fas fa-chevron-left"></i></button>
+      
+          <div class="review-cards-wrapper">
+            <div class="review-cards">
+              <div class="review-card">
+                <p>"I love the style and quality. Delivery was quick too!"</p>
+                <footer>- Jenna R.</footer>
+              </div>
+              <div class="review-card">
+                <p>"Super clean interface and easy to navigate. Shopping made fun!"</p>
+                <footer>- Liam T.</footer>
+              </div>
+              <div class="review-card">
+                <p>"NovaShop never disappoints. Great brands, fast shipping!"</p>
+                <footer>- Chloe M.</footer>
+              </div>
+              <div class="review-card">
+                <p>"Absolutely amazing experience. Will shop again!"</p>
+                <footer>- Marcus B.</footer>
+              </div>
+              <div class="review-card">
+                <p>"Customer support was incredibly helpful and quick!"</p>
+                <footer>- Aisha K.</footer>
+              </div>
+            </div>
+          </div>
+      
+          <button class="slider-btn next" onclick="nextReview()"><i class="fas fa-chevron-right"></i></button>
         </div>
-        <div class="review-card">
-          <p>"Super clean interface and easy to navigate. Shopping made fun!"</p>
-          <footer>- Liam T.</footer>
-        </div>
-        <div class="review-card">
-          <p>"NovaShop never disappoints. Great brands, fast shipping!"</p>
-          <footer>- Chloe M.</footer>
-        </div>
-      </div>
-    </div>
+      </div>      
   </section>
 <!-- FOOTER and Links -->
 <footer class="site-footer">
@@ -193,11 +226,11 @@
       <div class="footer-contact">
         <h4>Contact Us</h4>
         <p>Email: support@novashop.com</p>
-        <p>Phone: +1 234 567 890</p>
+        <p>Phone: +254759112532</p>
       </div>
   
       <div class="footer-newsletter">
-        <h4>Newsletter</h4>
+        <h4><span style="color: red;">Love</span> our selections, Subscribe!</h4>
         <form>
           <input type="email" placeholder="Your email" required />
           <button type="submit">Subscribe</button>
@@ -207,13 +240,13 @@
   
     <div class="footer-bottom">
       <div class="footer-social">
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fas fa-globe"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/@am_kiplagat"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://github.com/bethwel3001"><i class="fab fa-github"></i></a>
+        <a href="https://bethwel-lagat.netlify.app/"><i class="fas fa-globe"></i></a>
+        <a href="https://instagram.com/@iam_kiplagat001"><i class="fab fa-instagram"></i></a>
       </div>
       <p class="copyright">
-        &copy; 2025 NovaShop. All rights reserved. <a href="#top">Back to top ↑</a>
+        &copy; 2025 NovaShop. All rights reserved. <a href="#top">Back to Home ↑</a>
       </p>
     </div>
   </footer>
@@ -253,8 +286,28 @@ overlay.addEventListener("click", () => {
   hamburgerIcon.classList.add("fa-bars");
   hamburgerIcon.classList.remove("fa-times");
 });
+// cards on testimonials
+let currentIndex = 0;
 
+function updateSlider() {
+  const cards = document.querySelector(".review-cards");
+  const cardWidth = document.querySelector(".review-card").offsetWidth + 24; // includes gap
+  cards.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
 
+function nextReview() {
+  const totalCards = document.querySelectorAll(".review-card").length;
+  const maxIndex = totalCards - 1;
+  currentIndex = (currentIndex < maxIndex) ? currentIndex + 1 : 0;
+  updateSlider();
+}
+
+function prevReview() {
+  const totalCards = document.querySelectorAll(".review-card").length;
+  const maxIndex = totalCards - 1;
+  currentIndex = (currentIndex > 0) ? currentIndex - 1 : maxIndex;
+  updateSlider();
+}
 </script>  
 </body>
 </html>
