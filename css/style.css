@@ -37,7 +37,6 @@ body.dark {
   color: var(--dark-text);
 }
 /* Base Navbar Styling */
-/* Navbar Base */
 .navbar {
     position: sticky;
     top: 0;
@@ -58,7 +57,9 @@ body.dark {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
   }
-  
+  .glassy-nav a{
+    text-decoration: none;
+  }
   /* Logo Styling */
   .logo {
     font-family: 'Caveat', cursive;
